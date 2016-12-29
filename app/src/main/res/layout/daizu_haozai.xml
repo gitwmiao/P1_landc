@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/title_color"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:id="@+id/daizu_re">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dadada"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="地图"
+        android:textSize="18sp"
+        android:textColor="@color/withe"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:id="@+id/daizu_map"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/daizu_map"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/search_layout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:hint="请输入房源名称..."
+            android:background="@null"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

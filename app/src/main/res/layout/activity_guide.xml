@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="1024dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/splash_a"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="1024dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ll_circle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/checked_page"
+            android:id="@+id/circle01"/>
+        <ImageView
+            android:id="@+id/circle02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/unchecked_page"/>
+        <ImageView
+            android:id="@+id/circle03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/unchecked_page"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

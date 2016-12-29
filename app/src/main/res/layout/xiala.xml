@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/xl_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/xl_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/xl_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/xl_ll"
+            android:layout_alignTop="@+id/xl_ll"
+            android:layout_marginLeft="-40dp"
+            android:src="@mipmap/xlistview_arrow"/>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/xl_ll"
+            android:layout_alignTop="@+id/xl_ll"
+            android:visibility="invisible"
+            android:layout_marginRight="-50dp"
+            android:id="@+id/xl_pr"/>
+    </RelativeLayout>
+
+</LinearLayout>

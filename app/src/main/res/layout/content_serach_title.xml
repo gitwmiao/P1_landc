@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/zise"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/rl_online_title">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dadada"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tv_two_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="地图"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:textColor="@color/withe"
+        android:textSize="@dimen/text_18"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/tv_two_map"
+        android:background="@mipmap/search_layout">
+
+        <EditText
+            android:id="@+id/et_two_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入楼盘或商圈名称..."
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

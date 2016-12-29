@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_house_one"
+        android:id="@+id/title_bar_one"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_one">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/detail_fragment01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentOne"
+                />
+            <fragment
+                android:id="@+id/detail_fragment03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentThree"/>
+
+            <fragment
+                android:id="@+id/detail_fragment04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentFour"/>
+
+
+
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentTwo"
+                android:id="@+id/detail_fragment02"/>
+
+            <fragment
+                android:id="@+id/detail_fragment05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentFive"/>
+
+            <fragment
+                android:id="@+id/detail_fragment06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmemtSix"/>
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.bwf.p1_landz.iu.onlinevilla.fragment.FragmentSeven"
+                android:id="@+id/detail_fragment07"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    <include layout="@layout/one_lianxiren"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

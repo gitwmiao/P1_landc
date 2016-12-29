@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/weixin_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信好友"
+        android:drawableTop="@mipmap/weixin"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/pengyou_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朋友圈"
+        android:drawableTop="@mipmap/pengyouquan"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:drawablePadding="5dp"
+        />
+    <TextView
+        android:id="@+id/duanxin_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信"
+        android:drawableTop="@mipmap/duanxin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"/>
+
+</RelativeLayout>

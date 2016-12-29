@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_pic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/defult_onepic"
+                android:scaleType="fitXY"
+                android:id="@+id/zai_im_two"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_alignParentBottom="true"
+               android:background="@mipmap/list_floating_boxes">
+               <TextView
+                   android:id="@+id/zai_tv_two"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="@color/withe"
+                   android:textSize="@dimen/text_16"
+                   android:textStyle="bold"/>
+               <TextView
+
+                   android:id="@+id/tv_type"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBottom="@id/zai_tv_two"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/zai_tv_two"
+                   android:textColor="@color/withe" />
+
+               <TextView
+                   android:textColor="@color/withe"
+                   android:id="@+id/zai_tv_two_3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignLeft="@+id/zai_tv_two"
+                   android:layout_alignParentBottom="true"
+                   android:gravity="bottom"
+                   android:layout_below="@+id/zai_tv_two"
+                   android:layout_toLeftOf="@+id/zai_tv_two_4"/>
+               <TextView
+                   android:id="@+id/zai_tv_two_4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignTop="@+id/zai_tv_two_3"
+                   android:layout_marginRight="10dp"
+                   android:text="0-0万"
+                   android:textColor="@color/withe"
+                   android:textSize="@dimen/text_16"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/zai_im_two_tilite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/newhouse_free"
+            android:layout_marginRight="30dp"/>
+
+        <CheckedTextView
+            android:id="@+id/btn_newhouse_compare1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:background="@drawable/duibitupian"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_dadada"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:orientation="horizontal"
+       >
+       <TextView
+           android:paddingTop="8dp"
+           android:id="@+id/fr7_tv"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:text="更多一手房源推存"
+           android:textColor="@color/black"
+           android:layout_centerVertical="true"
+           android:textSize="18sp"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:src="@mipmap/first_more"
+           android:layout_marginRight="10dp"/>
+   </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/fr7_vw"/>
+
+    <ListView
+        android:id="@+id/fr7_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
